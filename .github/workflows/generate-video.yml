@@ -32,7 +32,7 @@ jobs:
       # ===== MAIN CONTROLS: EDIT ONLY THESE TWO VALUES FOR SEQUENCE STARTS =====
       # Run number paired with TITLE_START. As titles advance from TITLE_START,
       # the effective run number advances from SEQ_BASE_RUN by the same offset.
-      SEQ_BASE_RUN: "2"
+      SEQ_BASE_RUN: "3"
       # 1-based title catalog position where title progression begins.
       TITLE_START: "1"
 
