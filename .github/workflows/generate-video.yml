@@ -1,8 +1,8 @@
 name: Generate video from private repo
 
 on:
-  schedule:
-    - cron: '0 23 * * *'
+
+  
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
         working-directory: private-source
 
     env:
-      PRIVATE_REPO: "tranhongnghi419-bit/tim-3-diem-khac"
+      PRIVATE_REPO: "truonghuynhhang-cell/tim-so-khac"
       PRIVATE_REF: "main"
       PYTHONUNBUFFERED: "1"
       TOKENIZERS_PARALLELISM: "false"
