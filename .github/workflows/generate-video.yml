@@ -279,9 +279,9 @@ jobs:
           prompts = active_lines(control / 'extra-prompts.txt')
           if len(titles) < 300:
               raise SystemExit(f'extra-titles.txt must contain at least 300 titles; got {len(titles)}')
-          if len(prompts) != 600:
-              raise SystemExit(f'extra-prompts.txt must contain exactly 600 prompts; got {len(prompts)}')
-          if len(set(prompts)) != 600:
+          if not prompts:
+              raise SystemExit('extra-prompts.txt must contain at least 1 prompt')
+          if len(set(prompts)) != len(prompts):
               raise SystemExit('extra-prompts.txt contains duplicate prompt lines')
           if not (control / 'mota.txt').read_text(encoding='utf-8').strip():
               raise SystemExit('Public mota.txt is empty')
