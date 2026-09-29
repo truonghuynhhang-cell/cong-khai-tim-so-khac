@@ -1,7 +1,8 @@
 name: Generate video from private repo
 
 on:
-
+  schedule:
+    - cron: '0 23 * * *'   # 11:00 VN
   
   workflow_dispatch:
 
